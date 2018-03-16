@@ -10,6 +10,7 @@
         crossorigin="anonymous">
         <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
         <script src="https://code.jquery.com/jquery.js"></script>
+        <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
 </head>
 
 <body>
@@ -26,7 +27,7 @@
                     <div class="panel-heading" style="background-color: black; color: white">
                         <h3 class="panel-title">Current Train Schedule</h3>
                     </div>
-                    <table class="table">
+                    <table class="table" id= "train-table">
                         <thead>
                             <tr>
                                 <th scope="col" id="name">Train Name</th>
@@ -37,13 +38,6 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
                         </tbody>
                     </table>
                 </div>
