@@ -1,0 +1,20 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#banner {
+    background-image:url(../images/train.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+     color: white"
+}
+
+#title {
+    margin-top: 5px;
+   padding-bottom: 10%;
+    color: black;    
+}
+
+.panel-heading {
+background-color: rgb(218, 80, 92);
+}
