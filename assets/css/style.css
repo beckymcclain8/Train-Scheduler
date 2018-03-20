@@ -7,15 +7,16 @@ body {
     background-image:url(../images/train.jpg);
     background-repeat: no-repeat;
     background-position: center;
-     color: white"
+    color: white"
 }
 
 #title {
     margin-top: 5px;
-   padding-bottom: 10%;
+    padding-bottom: 10%;
     color: black;    
 }
 
-.panel-heading {
-background-color: rgb(218, 80, 92);
+#add-train {
+    background-color: rgb(223, 194, 177) !important; 
+    color: black !important;
 }
