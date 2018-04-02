@@ -30,6 +30,18 @@ $("#add-train").on("click", function(event) {
     .val()
     .trim();
 
+    validate();
+
+function validate() {
+ var x = document.forms["trainForm"]["trainName"].value;
+ var y = document.forms["trainForm"]["trainDestination"].value;
+ var z = document.forms["trainForm"]["firstTrainTime"].value;
+ var t = document.forms["trainForm"]["trainFrequency"].value;
+ if (x === "" || y === "" || isNaN(z) || isNaN(t)) {
+   alert("Please enter all of the train information.");
+  return false;
+ } else {
+
   var newTrain = {
     name: name,
     destination: destination,
@@ -52,7 +64,8 @@ $("#add-train").on("click", function(event) {
   $("#destination-input").val("");
   $("#first-input").val("");
   $("#frequency-input").val("");
-  
+}
+};
 });
 
 database.ref().on("child_added", function(snapshot, prevChildKey) {

@@ -20,3 +20,7 @@ body {
     background-color: rgb(223, 194, 177) !important; 
     color: black !important;
 }
+
+h3 {
+    padding-left: 50px;
+}
